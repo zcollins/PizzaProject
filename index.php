@@ -1,12 +1,16 @@
 <html>
     <body>
          <form action="" method="get">
-             Order? <input type="<?php echo $_GET["order"]; ?>" name="order"><br>
+             Order? <input type="text" name="order"><br>
              <input type="submit">
+             <?php
+
+             echo $_POST["order"];
+
+             ?>
          </form>
     </body>
 </html>
 
-<?php echo $_POST["order"]; ?>
 
 
