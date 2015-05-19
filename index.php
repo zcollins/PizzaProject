@@ -1,7 +1,7 @@
 <html>
     <body>
          <form action="" method="get">
-             Order? <input type="text" name="order"><br>
+             Order? <input type="text" value = "order" name="order"><br>
              <input type="submit">
              <?php
 
