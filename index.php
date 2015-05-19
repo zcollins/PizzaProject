@@ -1,16 +1,17 @@
 <html>
-    <body>
-         <form action="" method="get">
+
+      <head></head><title></title>  <form action="" method="get">
              Order? <input type="text" value = "order" name="order"><br>
              <input type="submit">
-             <?php
 
+             </form> </title>
+         <?php
             $order = $_POST['order'];
              print($order);
 
              ?>
-         </form>
-    </body>
+        </head>
+
 </html>
 
 
