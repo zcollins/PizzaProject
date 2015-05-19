@@ -1,8 +1,8 @@
 <html>
     <body>
-         <form action="<?php echo $_GET["name"]; ?>" method="get">
-             Name: <input type="text" name="name"><br>
-             E-mail: <input type="text" name="email"><br>
+         <form action="<?php echo $_GET["order"]; ?>" method="get">
+            <?php echo $_PUT["order"]; ?>
+             Order? <input type="text" name="name"><br>
              <input type="submit">
          </form>
     </body>
