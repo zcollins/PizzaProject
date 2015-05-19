@@ -1,18 +1,11 @@
 <html>
-
-      <head></head><title> <form action="" method="get">
-             Order? <input type="text" value = "order" name="order"><br>
-             <input type="submit">
-
-             </form> </title>
-         <?php
-            $order = $_POST['order'];
-             print($order);
-
-             ?>
-        </head>
-
+    <body>
+        <form action="action_page.php" method="POST">
+            Order<br>
+            <input type="text" name="<?php $_POST['$order']?>>
+            <br>
+            <br><br>
+            <input type="submit" value="Orderup!">
+        </form>
+    </body>
 </html>
-
-
-
