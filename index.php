@@ -1,8 +1,8 @@
 <html>
     <body>
          <form action="" method="get">
-             Order? <input type="text" name="name"><br>
-             <input type="submit">
+             Order? <input type="text" name="order"><br>
+             <input type="order">
          </form>
     </body>
 </html>
