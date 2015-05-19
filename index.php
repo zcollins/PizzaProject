@@ -1,6 +1,6 @@
 <html>
     <body>
-         <form action="<?php echo $_GET["order"]; ?>" method="get">
+         <form action="" method="get">
              Order? <input type="text" name="name"><br>
              <input type="submit">
          </form>
