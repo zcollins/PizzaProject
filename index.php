@@ -1,6 +1,6 @@
 <html>
     <body>
-        <form action=<?php echo"$myString"?> method="POST">
+        <form action=<?php echo"$myString"?>>
             Order<br>
             <input type="text" name=<?php $myString?>
             <br><br>
