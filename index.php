@@ -1,6 +1,6 @@
 <html>
 
-      <head></head><title></title>  <form action="" method="get">
+      <head></head><title> <form action="" method="get">
              Order? <input type="text" value = "order" name="order"><br>
              <input type="submit">
 
