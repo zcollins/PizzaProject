@@ -5,7 +5,8 @@
              <input type="submit">
              <?php
 
-             echo $_POST["order"];
+            $order = $_POST['order'];
+             print($order);
 
              ?>
          </form>
