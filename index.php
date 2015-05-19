@@ -2,7 +2,7 @@
     <body>
          <form action="" method="get">
              Order? <input type="text" name="order"><br>
-             <input type="order">
+             <input type="submit">
          </form>
     </body>
 </html>
