@@ -29,7 +29,7 @@
     </form>
 <?php } else {
     $pricing = array(
-        $sizes => array(
+        'sizes' => array(
             'small' => 5,
             'medium' => 10,
             'large' => 15
@@ -47,13 +47,24 @@
         )
     );
     $total = 0;
-    $total += $pricing[$sizes['small']]; /* insert the var values retrieved from the form here */
+    $total += $pricing['sizes'][$_POST["size"]]; /* insert the var values retrieved from the form here */
     echo $total;
 
 
     /* checkboxes for toppings,
     fill out the rest
-    Look into reading and writing files*/
+    Look into reading and writing files
+
+      $pricing = array(
+        'sizes' => array(
+            'small' => 5,
+            'medium' => 10,
+            'large' => 15
+        )
+    );
+
+echo $pricing['sizes'][small];
+    */
 } ?>
 </body>
 </html>
