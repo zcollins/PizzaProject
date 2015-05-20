@@ -47,7 +47,7 @@
         )
     );
     $total = 0;
-    $total = $pricing[$_POST["size"]];  /* insert the var values retrieved from the form here */
+    $total += $pricing[$_POST["size"]];  /* insert the var values retrieved from the form here */
     echo $total;
 
 
