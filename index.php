@@ -33,8 +33,8 @@
     elseif($_POST['deliverySpeed']=='jetpack')    {
         $total+= $total+35000;
     }
-        echo 'your total is: ';
-        echo $_POST['$total'];
+
+        echo $_POST["$total"];
     ?>
 <?php } ?>
 </body>
