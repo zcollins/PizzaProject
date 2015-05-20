@@ -46,8 +46,8 @@
             'automobile' => 5
         )
     );
-
     $total = 0;
+    $pricing[$_POST["size"]];  /* insert the var values retrieved from the form here */
     echo $total;
 
 
