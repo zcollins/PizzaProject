@@ -8,7 +8,7 @@
         Order<br>
         <label for="size">Crust Size</label>
         <select  name="size">
-            <option value="small">Medium</option>
+            <option value="small">Small</option>
             <option value="medium">Medium</option>
             <option value="large">Large</option>
         </select>
@@ -18,13 +18,14 @@
         <input type="checkbox" name="toppings" value="Hawaiian">Hawaiian<br />
         <input type="checkbox" name="toppings" value="steak">Steak<br />
         <br />
-
         <label for="delivery">Delivery Method</label>
         <select  name="delivery">
             <option value="train">Train</option>
             <option value="plane">Medium</option>
             <option value="automobile">Large</option>
         </select>
+        <br />
+        <input type="submit" value="Order">
     </form>
 <?php } else {
     $pricing = array(
