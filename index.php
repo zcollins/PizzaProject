@@ -7,8 +7,8 @@
     <input type="text" name="order" value="Order?">
     <br><br>
     <input type="submit" value="Submit">
-    <?php $_GET["$order"] ?>
-    <?php echo $_GET ?>
+    <?php $_GET[$order] ?>
+    <?php echo $_POST[$order] ?>
 </form>
 
 
