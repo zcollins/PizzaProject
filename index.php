@@ -2,12 +2,12 @@
 <html>
 <body>
 
-<form action="action_page.php">
+<form action="">
     Order<br>
     <input type="text" name="order" value="Order?">
     <br><br>
     <input type="submit" value="Submit">
-    <?php $_GET["name"] ?>
+    <?php $_GET["order"] ?>
 </form>
 
 
