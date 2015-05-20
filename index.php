@@ -9,7 +9,8 @@
         <br />
         <input type="text" name="type" placeholder="cheese or bbq">
         <br />
-        <input type="deliverySpeed" value="by bicycle or jetpack?">
+        <input type="deliverySpeed" placeholder="by bicycle or jetpack?">
+        <input type="submit" value="Order">
     </form>
 <?php } else { ?>
     <?php
