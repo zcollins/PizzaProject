@@ -1,5 +1,9 @@
-<?php
-$myString = "Hello!";
-echo $myString;
-echo "<h5>I love using PHP!</h5>";
-?>
+<html>
+    <input type="text" name=$firstname>
+        <?php
+        $myString = "Hello!";
+        echo $firstname;
+        ?>
+        <br><br>
+    <input type="submit" value="Submit">
+</html>
