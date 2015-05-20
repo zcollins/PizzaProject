@@ -1,7 +1,4 @@
 
-/* checkboxes for toppings,
-fill out the rest
-Look into reading and writing files*/
 <!DOCTYPE html>
 <html>
 <body>
@@ -51,6 +48,11 @@ Look into reading and writing files*/
 
     $total = 0;
     echo $total;
+
+
+    /* checkboxes for toppings,
+    fill out the rest
+    Look into reading and writing files*/
 } ?>
 </body>
 </html>
