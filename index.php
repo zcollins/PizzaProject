@@ -10,7 +10,7 @@
         <input type="submit" value="Submit">
     </form>
 <?php } else { ?>
-    <?php print_r($_POST);?>
+    <?php echo "order";?>
 <?php } ?>
 </body>
 </html>
