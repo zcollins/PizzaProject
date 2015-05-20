@@ -14,27 +14,26 @@
     </form>
 <?php } else { ?>
     <?php
-        $total = 0;
+    $total = 0;
     if($_POST['order']=='medium') {
        $total+= $total+10;
     }
     elseif($_POST['order']=='large')    {
         $total+= $total+15;
     }
-    if($_POST['type']=='cheese') {
+    if($_POST['type']=='cheese')    {
         $total+= $total+2;
     }
     elseif($_POST['type']=='bbq')    {
         $total+= $total+5;
     }
-    if($_POST['deliverySpeed']=='bicycle') {
+    if($_POST['deliverySpeed']=='bicycle')   {
         $total+= $total+10;
     }
     elseif($_POST['deliverySpeed']=='jetpack')    {
         $total+= $total+35000;
     }
-
-        echo $_POST["$total"];
+        echo $total;
     ?>
 <?php } ?>
 </body>
