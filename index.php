@@ -47,7 +47,7 @@
         )
     );
     $total = 0;
-    $total = $pricing['sizes']; /* insert the var values retrieved from the form here */
+    $total += $pricing['small']; /* insert the var values retrieved from the form here */
     echo $total;
 
 
