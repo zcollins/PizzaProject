@@ -22,7 +22,7 @@
         $total+= $total+15;
     }
     if($_POST['type']=='cheese')    {
-        $total+= $total+2;
+        $total+= $total+4;
     }
     elseif($_POST['type']=='bbq')    {
         $total+= $total+5;
