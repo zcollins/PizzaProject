@@ -6,6 +6,11 @@
     <form action="" method="POST">
         Order<br>
         <input type="text" name="size" placeholder="medium or large?">
+        <label for="size">Crust Size</label>
+        <select name="size">
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select>
         <br />
         <input type="text" name="type" placeholder="cheese or bbq">
         <br />
