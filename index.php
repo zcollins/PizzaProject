@@ -21,8 +21,8 @@
         <label for="thisDelivery">Delivery Method</label>
         <select  name="thisDelivery">
             <option value="train">Train</option>
-            <option value="plane">Medium</option>
-            <option value="automobile">Large</option>
+            <option value="plane">Plane</option>
+            <option value="automobile">Automobile</option>
         </select>
         <br />
         <input type="submit" value="Order">
