@@ -6,20 +6,20 @@
 <?php if(empty($_POST)) { ?>
     <form action="" method="POST">
         <h1>Order your <font=Red'Pizza!</font></h1>
-        <label for="size">Crust Size</label>
-        <select  name="size">
+        <label for="thisSize">Crust Size</label>
+        <select  name="thisSize">
             <option value="small">Small</option>
             <option value="medium">Medium</option>
             <option value="large">Large</option>
         </select>
         <br />
-        <input type="checkbox" name="toppings" value="pepperoni">Pepperoni<br />
-        <input type="checkbox" name="toppings" value="bbq">BBQ<br />
-        <input type="checkbox" name="toppings" value="Hawaiian">Hawaiian<br />
-        <input type="checkbox" name="toppings" value="steak">Steak<br />
+        <input type="checkbox" name="thisTopping" value="pepperoni">Pepperoni<br />
+        <input type="checkbox" name="thisTopping" value="bbq">BBQ<br />
+        <input type="checkbox" name="thisTopping" value="Hawaiian">Hawaiian<br />
+        <input type="checkbox" name="thisTopping" value="steak">Steak<br />
         <br />
-        <label for="delivery">Delivery Method</label>
-        <select  name="delivery">
+        <label for="thisDelivery">Delivery Method</label>
+        <select  name="thisDelivery">
             <option value="train">Train</option>
             <option value="plane">Medium</option>
             <option value="automobile">Large</option>
@@ -47,7 +47,7 @@
         )
     );
     $total = 0;
-    $total += $pricing['sizes'][$_POST["size"]]; /* insert the var values retrieved from the form here */
+    $total += $pricing['sizes'][$_POST["thisSize"]] + $pricing['toppings'][$_POST["thisTopping"]] + $total += $pricing['deliveryMethods'][$_POST["thisDelivery"]]; /* insert the var values retrieved from the form here */
     echo $total;
 
 
