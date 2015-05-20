@@ -29,7 +29,7 @@
     </form>
 <?php } else {
     $pricing = array(
-        'sizes' => array(
+        $sizes => array(
             'small' => 5,
             'medium' => 10,
             'large' => 15
