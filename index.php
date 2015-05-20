@@ -1,11 +1,11 @@
 
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <body>
 
 <?php if(empty($_POST)) { ?>
     <form action="" method="POST">
-        Order<br>
+        <h1>Order your <font=Red'Pizza!</font></h1>
         <label for="size">Crust Size</label>
         <select  name="size">
             <option value="small">Small</option>
