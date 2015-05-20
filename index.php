@@ -4,7 +4,7 @@
 
 <form action="" method="POST">
     Order<br>
-    <input type="text" name="order" value="Order?">
+    <input type="text" name="order" placeholder="Order?">
     <br><br>
     <input type="submit" value="Submit">
     <?php $_POST["$order"] ?>
