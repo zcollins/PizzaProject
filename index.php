@@ -5,12 +5,36 @@
 <?php if(empty($_POST)) { ?>
     <form action="" method="POST">
         Order<br>
-        <input type="text" name="order" placeholder="Order?">
-        <br><br>
-        <input type="submit" value="Submit">
+        <input type="text" name="size" placeholder="medium or large?">
+        <br />
+        <input type="text" name="type" placeholder="cheese or bbq">
+        <br />
+        <input type="deliverySpeed" value="by bicycle or jetpack?">
     </form>
 <?php } else { ?>
-    <?php echo $_POST['order'];?>
+    <?php
+        $total = 0;
+    if($_POST['order']=='medium') {
+       $total+= $total+10;
+    }
+    elseif($_POST['order']=='large')    {
+        $total+= $total+15;
+    }
+    if($_POST['type']=='cheese') {
+        $total+= $total+2;
+    }
+    elseif($_POST['type']=='bbq')    {
+        $total+= $total+5;
+    }
+    if($_POST['deliverySpeed']=='bicycle') {
+        $total+= $total+10;
+    }
+    elseif($_POST['deliverySpeed']=='jetpack')    {
+        $total+= $total+35000;
+    }
+        echo 'your total is: ';
+        echo $_POST['$total'];
+    ?>
 <?php } ?>
 </body>
 </html>
