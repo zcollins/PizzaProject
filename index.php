@@ -9,7 +9,7 @@
         <br />
         <input type="text" name="type" placeholder="cheese or bbq">
         <br />
-        <input type="deliverySpeed" placeholder="by bicycle or jetpack?">
+        <input type="deliverySpeed" name="deliverySpeed" placeholder="by bicycle or jetpack?">
         <input type="submit" value="Order">
     </form>
 <?php } else { ?>
@@ -20,7 +20,7 @@
     }
     elseif($_POST['order']=='large')    {
         $total+= $total+15;
-    }
+    };
     if($_POST['type']=='cheese')    {
         $total+= $total+4;
     }
@@ -32,7 +32,7 @@
     }
     elseif($_POST['deliverySpeed']=='jetpack')    {
         $total+= $total+35000;
-    }
+    };
         echo $total;
     ?>
 <?php } ?>
