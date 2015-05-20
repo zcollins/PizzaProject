@@ -8,9 +8,8 @@
     <br><br>
     <input type="submit" value="Submit">
     <?php $_POST["$order"] ?>
-    <?php print_r($_POST) ?>
+    <?php echo $_POST['order'] ?>
 </form>
-
 
 </body>
 </html>
