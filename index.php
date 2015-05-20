@@ -5,9 +5,8 @@
 <?php if(empty($_POST)) { ?>
     <form action="" method="POST">
         Order<br>
-        <input type="text" name="size" placeholder="medium or large?">
         <label for="size">Crust Size</label>
-        <select name="size">
+        <select  name="size">
             <option value="medium">Medium</option>
             <option value="large">Large</option>
         </select>
@@ -20,10 +19,10 @@
 <?php } else { ?>
     <?php
     $total = 0;
-    if($_POST['order']=='medium') {
+    if($_POST['size']=='medium') {
        $total+= $total+10;
     }
-    elseif($_POST['order']=='large')    {
+    elseif($_POST['size']=='large')    {
         $total+= $total+15;
     };
     if($_POST['type']=='cheese')    {
