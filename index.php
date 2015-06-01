@@ -30,6 +30,8 @@ include('Ordering/Order.php')
         <br />
         <input type="submit" value="Order">
     </form>
+
+
 <?php } else {
 
     $customer = new \Customers\Customer();

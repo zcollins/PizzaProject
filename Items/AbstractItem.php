@@ -9,10 +9,6 @@ abstract class AbstractItem implements ItemInterface {
     public function getName() {
         return $this->name;
     }
-
-    public function getPrice() {
-        return $this->price;
-    }
 }
 
 //extends is under implements is using an interface
