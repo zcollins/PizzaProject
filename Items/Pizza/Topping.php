@@ -27,7 +27,7 @@ class Topping {
         $this->side = $side;
     }
 
-    public function getCost() {
+    public function getPrice() {
         $price = ($this->quantity*$this->basePrice);
 
         return $price;

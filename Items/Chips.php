@@ -11,8 +11,7 @@ class Chips extends AbstractItem implements ItemInterface {
         $this->$type = $type;
     }
 
-    public function getPrice()
-    {
+    public function getPrice() {
             $typeCost = array(
                 'lays' => 1,
                 'kettle' => 1,

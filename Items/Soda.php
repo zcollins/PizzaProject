@@ -29,7 +29,6 @@ class Soda extends AbstractItem implements ItemInterface {
                 '48oz' => 2
             )
         );
-        $addedPrice = $pricing[$sodaType[$this->type]*$sodaSize[$this->$size]];
-        return $price;
+        return $pricing[$sodaType[$this->type]*$sodaSize[$this->$size]];
     }
 }

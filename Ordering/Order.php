@@ -2,6 +2,7 @@
 
 namespace Ordering;
 
+use Items;
 
 class Order {
 
@@ -35,7 +36,7 @@ class Order {
      * Do something here like grab the customer info from the prior function etc.
      */
 
-    public function addItem(\Items\ItemInterface $item) {
+    public function addItem(Items\ItemInterface $item) {
         $this->items[] = $item;
     }
 
