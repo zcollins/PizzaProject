@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
+<html>
 <body>
 <?php
 include('Ordering/Order.php')
@@ -8,25 +8,33 @@ include('Ordering/Order.php')
 
 <?php if(empty($_POST)) { ?>
     <form action="" method="POST">
-        <h1>Order your Pizza!</h1>
+        <h1>Welcome to the Pizza Shoppe</h1>
         <label for="size">Crust Size</label>
         <select  name="size">
             <option value="small">Small</option>
             <option value="medium">Medium</option>
             <option value="large">Large</option>
         </select>
+
         <br />
         <input type="checkbox" name="toppings[]" value="pepperoni">Pepperoni<br />
         <input type="checkbox" name="toppings[]" value="bbq">BBQ<br />
         <input type="checkbox" name="toppings[]" value="hawaiian">Hawaiian<br />
         <input type="checkbox" name="toppings[]" value="steak">Steak<br />
         <br />
+
         <label for="delivery">Delivery Method</label>
         <select  name="delivery">
             <option value="train">Train</option>
             <option value="plane">Plane</option>
             <option value="automobile">Automobile</option>
         </select>
+
+        <label for="customer">Please enter your Information!</label>
+            First name: <input type="text" name="firstName"><br>
+            Middle name: <input type="text" name="middleName"<br>
+            Last name: <input type="text" name="lastName"><br>
+
         <br />
         <input type="submit" value="Order">
     </form>
@@ -34,13 +42,6 @@ include('Ordering/Order.php')
 
 <?php } else {
 
-    $customer = new \Customers\Customer();
-
-    $customer->setName('Zac', 'Jacob', 'Collins');
-    $order = new Ordering\Order($customer);
-    //have database thrown into object and access from there, get a specific row or document from the database etc.
-
-    $order->getDeliveryEmail();
 
     $pricing = array(
           'sizes' => array(
@@ -59,16 +60,6 @@ include('Ordering/Order.php')
             'plane'         => 20,
             'automobile'    => 5
         )
-    );
-
-    $price = 0;
-    $file = fopen('orders.json', 'r+');
-    $orders = json_decode(fread($file, filesize($file)), true);
-
-    $order = array(
-        'size'      => null,
-        'toppings'  => array(),
-        'delivery'  => null
     );
 
     if(empty($pricing['sizes'][$_POST['size']])) {
@@ -94,16 +85,38 @@ include('Ordering/Order.php')
         $order['delivery'] = $_POST['delivery'];
     }
 
-    $orders[] = $order;
-
-    $written = fwrite($file, json_encode($orders));
-
-    if($written === 0) {
-        throw new \Exception('Error writing to file');
-    }
-
-    fclose($file);
-
+    echo $pricing;
 } ?>
 </body>
 </html>
+
+
+//$customer = new \Customers\Customer();
+//$customer->setName('Zac', 'Jacob', 'Collins');
+
+//$order = new Ordering\Order($customer);
+//$order->getDeliveryEmail();
+
+
+//    $orders[] = $order;
+//
+//    $written = fwrite($file, json_encode($orders));
+//
+//    if($written === 0) {
+//        throw new \Exception('Error writing to file');
+//    }
+//
+//    fclose($file);
+
+//$order = array(
+//'size'      => null,
+//'toppings'  => array(),
+//'delivery'  => null
+//);
+
+//$price = 0;
+//$file = fopen('orders.json', 'r+');
+//$orders = json_decode(fread($file, filesize($file)), true);
+
+//Going to need to pass the pizza information as is initialized etc. into the pizza
+//or whatever
